@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget
 	id = "fino.cocinamos"
-	ios-CFBundleVersion="20014"
-	version="20014"
-	versionCode="20014"
+	ios-CFBundleVersion="20015"
+	version="20015"
+	versionCode="20015"
 	xmlns="http://www.w3.org/ns/widgets"
 	xmlns:gap="http://phonegap.com/ns/1.0"
 >
