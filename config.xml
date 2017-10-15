@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget
+	id = "fino.cocinamos"
+	ios-CFBundleVersion="20014"
+	version="20014"
+	versionCode="20014"
+	xmlns="http://www.w3.org/ns/widgets"
+	xmlns:gap="http://phonegap.com/ns/1.0"
+>
+    <name>Cocinamos</name>
+    <description>Cocinando con Fino</description>
+    <author email="info@motion.com.bo" href="http://www.motion.com.bo">MOTION TM LTDA.</author>
+    <preference name="android-build-tool" value="gradle" />
+    <preference name="android-targetSdkVersion" value="19" />
+    <preference name="android-minSdkVersion" value="19" />
+    <preference name="permissions" value="none" />
+    <preference name="orientation" value="default" />
+    <preference name="target-device" value="universal" />
+    <preference name="fullscreen" value="false" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="prerendered-icon" value="true" />
+    <preference name="stay-in-webview" value="false" />
+    <preference name="detect-data-types" value="false" />
+    <preference name="exit-on-suspend" value="false" />
+    <preference name="show-splash-screen-spinner" value="false" />
+    <preference name="auto-hide-splash-screen" value="false" />
+    <preference name="disable-cursor" value="false" />
+    <preference name="android-installLocation" value="auto" />
+    <preference name="UIWebViewBounce" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="SplashScreenDelay" value="120000" />
+    <preference name="AutoHideSplashScreen" value="false" />
+    <preference name="FadeSplashScreenDuration" value="750" />
+    <preference name="ShowSplashScreenSpinner" value="false" />
+    <!--<preference name='phonegap-version' value='cli-7.0.1' />
+    <preference name='pgb-builder-version' value='2' />-->
+    <plugin source="git" spec="https://github.com/apache/cordova-plugin-device.git" />
+    <plugin source="git" spec="https://github.com/apache/cordova-plugin-device-orientation.git" />
+    <plugin source="git" spec="https://github.com/apache/cordova-plugin-dialogs.git" />
+    <plugin name="https://github.com/apache/cordova-plugin-file-transfer.git" />
+    <plugin source="git" spec="https://github.com/apache/cordova-plugin-inappbrowser.git" />
+    <plugin source="git" spec="https://github.com/apache/cordova-plugin-network-information.git" />
+    <plugin source="git" spec="https://github.com/apache/cordova-plugin-splashscreen.git" />
+    <plugin source="git" spec="https://github.com/apache/cordova-plugin-vibration.git" />
+    <plugin name="cordova-plugin-statusbar" />
+    <plugin source="git" spec="https://github.com/nchutchind/cordova-plugin-streaming-media.git" />
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="StatusBar">
+        <param name="ios-package" onload="true" value="CDVStatusBar" />
+    </feature>
+    <plugin source="git" spec="https://github.com/AppsFlyerSDK/PhoneGap.git" />
+    <feature name="AppsFlyerPlugin">
+        <param name="ios-package" value="AppsFlyerPlugin" />
+    </feature>
+    <feature name="AppsFlyerPlugin">
+        <param name="android-package" value="com.appsflyer.cordova.plugin.AppsFlyerPlugin" />
+    </feature>
+    <preference name="StatusBarOverlaysWebView" value="true" />
+    <preference name="StatusBarBackgroundColor" value="#dae87b" />
+    <preference name="StatusBarStyle" value="blackopaque" />
+    <preference name="AndroidPersistentFileLocation" value="Compatibility" />
+    <icon height="180" platform="ios" src="res/icon/ios/icon-60@3x.png" width="180" />
+    <icon height="60" platform="ios" src="res/icon/ios/icon-60.png" width="60" />
+    <icon height="120" platform="ios" src="res/icon/ios/icon-60@2x.png" width="120" />
+    <icon height="76" platform="ios" src="res/icon/ios/icon-76.png" width="76" />
+    <icon height="152" platform="ios" src="res/icon/ios/icon-76@2x.png" width="152" />
+    <icon height="167" platform="ios" src="res/icon/ios/icon-83.5@2x.png" width="167" />
+    <icon height="29" platform="ios" src="res/icon/ios/icon-small.png" width="29" />
+    <icon height="58" platform="ios" src="res/icon/ios/icon-small@2x.png" width="58" />
+    <icon height="87" platform="ios" src="res/icon/ios/icon-small@3x.png" width="87" />
+    <icon height="40" platform="ios" src="res/icon/ios/icon-40.png" width="40" />
+    <icon height="80" platform="ios" src="res/icon/ios/icon-40@2x.png" width="80" />
+    <icon height="120" platform="ios" src="res/icon/ios/icon-40@3x.png" width="120" />
+    <icon height="57" platform="ios" src="res/icon/ios/icon.png" width="57" />
+    <icon height="114" platform="ios" src="res/icon/ios/icon@2x.png" width="114" />
+    <icon height="72" platform="ios" src="res/icon/ios/icon-72.png" width="72" />
+    <icon height="144" platform="ios" src="res/icon/ios/icon-72@2x.png" width="144" />
+    <icon height="29" platform="ios" src="res/icon/ios/icon-small.png" width="29" />
+    <icon height="58" platform="ios" src="res/icon/ios/icon-small@2x.png" width="58" />
+    <icon height="50" platform="ios" src="res/icon/ios/icon-50.png" width="50" />
+    <icon height="100" platform="ios" src="res/icon/ios/icon-50@2x.png" width="100" />
+    <icon platform="android" qualifier="ldpi" src="res/icon/android/icon-36-ldpi.png" />
+    <icon platform="android" qualifier="mdpi" src="res/icon/android/icon-48-mdpi.png" />
+    <icon platform="android" qualifier="hdpi" src="res/icon/android/icon-72-hdpi.png" />
+    <icon platform="android" qualifier="xhdpi" src="res/icon/android/icon-96-xhdpi.png" />
+    <splash height="1136" platform="ios" src="res/screen/ios/Default-568h@2x~iphone.png" width="640" />
+    <splash height="1334" platform="ios" src="res/screen/ios/Default-667h.png" width="750" />
+    <splash height="2208" platform="ios" src="res/screen/ios/Default-736h.png" width="1242" />
+    <splash height="1242" platform="ios" src="res/screen/ios/Default-Landscape-736h.png" width="2208" />
+    <splash height="1536" platform="ios" src="res/screen/ios/Default-Landscape@2x~ipad.png" width="2048" />
+    <splash height="768" platform="ios" src="res/screen/ios/Default-Landscape~ipad.png" width="1024" />
+    <splash height="2048" platform="ios" src="res/screen/ios/Default-Portrait@2x~ipad.png" width="1536" />
+    <splash height="1024" platform="ios" src="res/screen/ios/Default-Portrait~ipad.png" width="768" />
+    <splash height="960" platform="ios" src="res/screen/ios/Default@2x~iphone.png" width="640" />
+    <splash height="480" platform="ios" src="res/screen/ios/Default~iphone.png" width="320" />
+    <splash platform="android" qualifier="port-ldpi" src="res/screen/android/ldpi.png" />
+    <splash platform="android" qualifier="port-mdpi" src="res/screen/android/mdpi.png" />
+    <splash platform="android" qualifier="port-hdpi" src="res/screen/android/hdpi.png" />
+    <splash platform="android" qualifier="port-xhdpi" src="res/screen/android/xhdpi.png" />
+    <splash platform="android" qualifier="port-xxhdpi" src="res/screen/android/xhdpi.png" />
+    <splash platform="android" qualifier="port-xxxhdpi" src="res/screen/android/xhdpi.png" />
+    <splash platform="android" qualifier="land-ldpi" src="res/screen/android/land-ldpi.png" />
+    <splash platform="android" qualifier="land-mdpi" src="res/screen/android/land-mdpi.png" />
+    <splash platform="android" qualifier="land-hdpi" src="res/screen/android/land-hdpi.png" />
+    <splash platform="android" qualifier="land-xhdpi" src="res/screen/android/land-xhdpi.png" />
+    <splash platform="android" qualifier="land-xxhdpi" src="res/screen/android/land-xhdpi.png" />
+    <splash platform="android" qualifier="land-xxxhdpi" src="res/screen/android/land-xhdpi.png" />
+    <!--<gap:config-file parent="CFBundleShortVersionString" platform="ios"><string>100</string></gap:config-file>-->
+    <access origin="*" />
+    <plugin source="git" spec="https://github.com/Glitchbone/CordovaYoutubeVideoPlayer.git" />
+    <plugin spec="https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin.git" source="git" />
+    <plugin source="git" spec="https://github.com/sarriaroman/photoviewer.git" />
+    <plugin source="git" spec="https://github.com/jackpocket/cordova-plugin-facebook4.git">
+        <variable name="SENDER_ID" value="739773876794" />
+        <variable name="APP_ID" value="1129872310422559" />
+        <variable name="APP_NAME" value="COCINAMOS" />
+    </plugin>
+    <plugin source="npm" spec="https://github.com/jackpocket/cordova-plugin-facebook-push-campaign.git" />
+    <plugin name="phonegap-plugin-push">
+        <variable name="SENDER_ID" value="739773876794" />
+        <variable name="APP_ID" value="1129872310422559" />
+        <variable name="APP_NAME" value="COCINAMOS" />
+    </plugin>
+    <plugin name="cordova-plugin-google-app-conversion-tracker" spec="https://github.com/insiderpages/google-app-conversion-tracker.git" />
+    <content src="index.html" />
+    <plugin name="cordova-plugin-whitelist" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <preference name="orientation" value="default" />
+        <preference name="StatusBarBackgroundColor" value="#39ac08" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+        <preference name="StatusBarBackgroundColor" value="#39ac08" />
+    </platform>
+    <plugin source="git" spec="https://github.com/danwilson/google-analytics-plugin.git" />
+    <!--<plugin name="mp-cordova-plugin-google-analytics" />-->
+    <feature name="UniversalAnalytics">
+        <param name="ios-package" value="UniversalAnalyticsPlugin" />
+    </feature>
+    <feature name="UniversalAnalytics">
+        <param name="android-package" value="com.danielcwilson.plugins.analytics.UniversalAnalyticsPlugin" />
+    </feature>
+</widget>
